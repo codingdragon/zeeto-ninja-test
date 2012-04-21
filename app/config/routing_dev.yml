@@ -10,6 +10,11 @@ _demo:
     resource: "@AcmeDemoBundle/Controller/DemoController.php"
     type:     annotation
     prefix:   /demo
+    
+_ninja:
+    resource: "@ZeetoNinjaBundle/Controller/IndexController.php"
+    type:     annotation
+    prefix:   /ninja
 
 _assetic:
     resource: .

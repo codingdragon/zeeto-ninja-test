@@ -1,0 +1,127 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	background: url('/images/bg.jpg') repeat-x #f5f6e8;
+	width:100%;
+	font-family: Helvetica, arial, sans-serif;
+	font-size:12px;
+	line-height:130%;
+	
+}
+
+a { 
+	text-decoration:none;
+	font-weight:bold;
+}
+
+h1{
+	color:#5a5540;
+	margin: 0px 0px 5px 0px;
+	font-size:30px;
+}
+h2{
+	color:#5a5540;
+	margin: 0px 0px 0px 0px;
+	font-size:20px;
+}
+#container{
+	width:900px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#page{
+	margin-top:25px;
+}
+
+#logo{
+	float:left;
+	margin-bottom: 50px;
+}
+
+#cart {
+	float:right;
+	margin-top:35px;
+	}
+	
+#cart a{
+	font-weight:bold;
+	color:#42bbc9;
+	text-transform:uppercase;
+}
+#top-nav{
+    float: left;
+	clear:both;
+	margin-bottom: 10px;
+}
+
+#top-nav ul li{
+	display:inline;
+	list-style:none;
+	display:inline-block;
+	margin:0px 20px 0px 10px;
+	
+}
+#top-nav a{
+	color:#42bbc9;
+	text-transform:uppercase;
+}
+
+#top-nav a:hover{
+	font-color:#03F;
+	text-decoration:underline;
+}
+
+#main{
+	width:575px;
+	float:left;
+	clear:both;
+	margin:0px 0px 35px 0px;
+}
+
+#feature{
+	margin-bottom:30px;
+}
+
+#feature img.mid{
+	margin:0px 20px;
+}
+.submitted{
+	font-weight:bold;
+	color:#aaa185;
+}
+
+#content{
+	background:#fff;
+	padding:20px;
+	margin-top:15px;
+}
+
+#content h3{
+	color:#879f00;
+}
+
+#right{
+	width:290px;
+	float:right;
+	}
+
+#login{
+	background:#fff;
+	padding: 20px 0 30px 40px;
+	margin-top:15px;
+}
+
+#login a{
+	color:#f57146;
+	font-weight:bold;
+	text-decoration:underline;
+	margin-left:20px;
+}
+
+.login{
+	margin-top:10px;
+}
+		
+
