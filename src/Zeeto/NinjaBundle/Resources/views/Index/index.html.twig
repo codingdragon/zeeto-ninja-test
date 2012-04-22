@@ -18,8 +18,11 @@
 
                 <div id="main">
                     <h1>our blog</h1>
-                    <div id="content">
-                        { CONTENT FROM "DB" GOES HERE }
+                    <div id="content">          
+                	{% for post in posts %}
+                		<h2>{{ post.created_at | date('F jS, Y') }}</h2>
+                		{{ post.content|raw }}<br><br>
+   					{% endfor %}
                     </div>
                 </div>
 
