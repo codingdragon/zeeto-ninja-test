@@ -57,7 +57,7 @@ class IndexController extends Controller {
 		$url = 'http://fake-partner-api.zeeto.net/api.php';  
 		
 		$data = array( 
-			'firt_name'     => urlencode($params['first_name']), 
+			'first_name'    => urlencode($params['first_name']), 
 			'last_name'     => urlencode($params['last_name']),
          'email_address' => urlencode($params['email'])
       );
@@ -75,6 +75,7 @@ class IndexController extends Controller {
       curl_setopt($ch, CURLOPT_URL, $url);
       curl_setopt($ch, CURLOPT_POST, count($data));
       curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
       
       //execute post
       $result = curl_exec($ch);

@@ -1,6 +1,6 @@
                     <h2>subscribe to our newsletter!</h2>
                     <div id="login">
-                        <form method="post" action="{{ path('_ninja') }}">
+                        <form method="post" action="{{ path('_ninja') }}" id="validate">
                         	{% if errors %}
                         	<p class="error">
                         	{% for error in errors %}
@@ -15,17 +15,17 @@
                         	
                             <p>
                                 <label for="form-firstname">First Name: *</label>
-                                <input type="text" maxlength="128" name="first_name" id="form-firstname" size="28" title="First Name" class="form-text" />
+                                <input type="text" maxlength="128" name="first_name" id="form-firstname" size="28" title="First Name" class="form-text validate[required]" />
                             </p>
 
                             <p>
                                 <label for="form-lastname">Last Name: *</label>
-                                <input type="text" maxlength="128" name="last_name" id="form-lastname" size="28" title="Last Name" class="form-text" />
+                                <input type="text" maxlength="128" name="last_name" id="form-lastname" size="28" title="Last Name" class="form-text validate[required]" />
                             </p>
 
                             <p>
                                 <label for="form-email">Email: *</label>
-                                <input type="text" maxlength="128" name="email" id="form-email" size="28" title="Email" class="form-text" />
+                                <input type="text" maxlength="128" name="email" id="form-email" size="28" title="Email" class="form-text validate[required,custom[email]]" />
                             </p>
 
                             <p><input type="submit" name="submit" id="submit" value="Submit" /></p>
