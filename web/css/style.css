@@ -123,5 +123,30 @@ h2{
 .login{
 	margin-top:10px;
 }
-		
 
+.error{
+	display: block;
+	padding: 5px;
+	color: #8C1717;
+	font: 12px Geneva, Arial, Helvetica, sans-serif; 
+	font-weight: bolder;
+	border: 1px solid #FFCF0F;
+	text-align: left;
+	text-transform: capitalize;
+	background-color: #FFFCCF;
+	margin-bottom: 2em;
+	width: 78%;
+}
+.success{
+	display: block;
+	padding: 5px;
+	color: #4A6F14;
+	font: 12px Geneva, Arial, Helvetica, sans-serif; 
+	font-weight: bolder;
+	border: 1px solid #78CC00;
+	text-align: left;
+	text-transform: capitalize;
+	background-color: #D9F2B3;
+	margin-bottom: 2em;
+	width: 78%;
+}

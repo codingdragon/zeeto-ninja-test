@@ -27,27 +27,7 @@
                 </div>
 
                 <div id="right">
-                    <h2>subscribe to our newsletter!</h2>
-                    <div id="login">
-                        <form method="post" action="">
-                            <p>
-                                <label for="form-firstname">First Name: *</label>
-                                <input type="text" maxlength="128" id="form-firstname" size="28" title="First Name" class="form-text" />
-                            </p>
-
-                            <p>
-                                <label for="form-lastname">Last Name: *</label>
-                                <input type="text" maxlength="128" id="form-lastname" size="28" title="Last Name" class="form-text" />
-                            </p>
-
-                            <p>
-                                <label for="form-email">Email: *</label>
-                                <input type="text" maxlength="128" id="form-email" size="28" title="Email" class="form-text" />
-                            </p>
-
-                            <p><input type="submit" value="Submit" /></p>
-                        </form>
-                    </div>
+                {% include 'ZeetoNinjaBundle:Index:login.html.twig' %}
                 </div>
             </div>
         </div>

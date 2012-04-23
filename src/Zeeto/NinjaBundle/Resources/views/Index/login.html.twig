@@ -1,0 +1,46 @@
+                    <h2>subscribe to our newsletter!</h2>
+                    <div id="login">
+                        <form method="post" action="{{ path('_ninja') }}">
+                        	{% if errors %}
+                        	<p class="error">
+                        	{% for error in errors %}
+                        	{{ error }}<br>
+                        	{% endfor %}
+                        	</p>
+                        	{% elseif app.session.hasFlash('success') %}
+                        	<p class="success">
+                        	{{ app.session.flash('success') }}
+                        	</p>
+                        	{% endif %}
+                        	
+                            <p>
+                                <label for="form-firstname">First Name: *</label>
+                                <input type="text" maxlength="128" name="first_name" id="form-firstname" size="28" title="First Name" class="form-text" />
+                            </p>
+
+                            <p>
+                                <label for="form-lastname">Last Name: *</label>
+                                <input type="text" maxlength="128" name="last_name" id="form-lastname" size="28" title="Last Name" class="form-text" />
+                            </p>
+
+                            <p>
+                                <label for="form-email">Email: *</label>
+                                <input type="text" maxlength="128" name="email" id="form-email" size="28" title="Email" class="form-text" />
+                            </p>
+
+                            <p><input type="submit" name="submit" id="submit" value="Submit" /></p>
+                        </form> 
+                        
+                        {# created form using symfony
+                        {% block content %} 
+                        <form action="{{ path('_ninja') }}" method="POST" > 
+                        	{{ form_errors(form) }} 
+                        	{{ form_row(form.first_name) }}
+                        	{{ form_row(form.last_name) }}
+                        	{{ form_row(form.email) }}
+                        	{{ form_rest(form) }}
+                        	<p><input type="submit" value="Submit" /></p>
+                        </form>
+                        {% endblock %}
+                        #}
+                    </div>
